@@ -1,4 +1,12 @@
 {
+  "public/in-the-whale.mp3": {
+    "type": "asset",
+    "tags": [
+      "Audio"
+    ],
+    "dependencies": [],
+    "name": "in-the-whale.mp3"
+  },
   "public/level_1.glb": {
     "type": "asset",
     "tags": [
@@ -9,13 +17,99 @@
     "thumbnailKey": "projects/dinomut1/ball-champions/public/thumbnails/ab99aa1423043a87108284ec73be0832c12596c31349b0.png",
     "thumbnailMode": "automatic"
   },
+  "public/level_2.glb": {
+    "type": "asset",
+    "tags": [
+      "Model"
+    ],
+    "dependencies": [],
+    "name": "level_2.glb",
+    "thumbnailKey": "projects/dinomut1/ball-champions/public/thumbnails/d8222d3e0f2d79d2de9804e453fb99a993667cc7a91e7d.png",
+    "thumbnailMode": "automatic"
+  },
+  "public/level_3.glb": {
+    "type": "asset",
+    "tags": [
+      "Model"
+    ],
+    "dependencies": [],
+    "name": "level_3.glb",
+    "thumbnailKey": "projects/dinomut1/ball-champions/public/thumbnails/13d8433e98895ffc1fc072b475f133fb41245be5884d26.png",
+    "thumbnailMode": "automatic"
+  },
+  "public/mini-games.mp3": {
+    "type": "asset",
+    "tags": [
+      "Audio"
+    ],
+    "dependencies": [],
+    "name": "mini-games.mp3"
+  },
+  "public/scenes/levels.bin": {
+    "type": "file",
+    "tags": [
+      "unknown"
+    ],
+    "dependencies": [],
+    "name": "levels.bin"
+  },
+  "public/scenes/levels.gltf": {
+    "type": "scene",
+    "tags": [
+      "Model"
+    ],
+    "dependencies": [],
+    "name": "levels.gltf",
+    "thumbnailKey": ""
+  },
+  "public/scenes/New-Scene-1.gltf": {
+    "type": "scene",
+    "tags": [
+      "Model"
+    ],
+    "dependencies": [],
+    "name": "New-Scene-1.gltf"
+  },
   "public/scenes/New-Scene.gltf": {
     "type": "scene",
     "tags": [
       "Model"
     ],
     "dependencies": [],
-    "name": "New-Scene.gltf",
-    "thumbnailKey": ""
+    "name": "New-Scene.gltf"
+  },
+  "public/SMB1_Starry_Night.png": {
+    "type": "asset",
+    "tags": [
+      "Image"
+    ],
+    "dependencies": [],
+    "name": "SMB1_Starry_Night.png",
+    "thumbnailKey": "projects/dinomut1/ball-champions/public/thumbnails/b5fe65a298f13d401a553b334dedad5d04b75d9f561725.png",
+    "thumbnailMode": "automatic"
+  },
+  "public/space-colony.mp3": {
+    "type": "asset",
+    "tags": [
+      "Audio"
+    ],
+    "dependencies": [],
+    "name": "space-colony.mp3"
+  },
+  "public/underwater.mp3": {
+    "type": "asset",
+    "tags": [
+      "Audio"
+    ],
+    "dependencies": [],
+    "name": "underwater.mp3"
+  },
+  "public/volcano.mp3": {
+    "type": "asset",
+    "tags": [
+      "Audio"
+    ],
+    "dependencies": [],
+    "name": "volcano.mp3"
   }
 }
