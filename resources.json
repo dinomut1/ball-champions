@@ -1,0 +1,21 @@
+{
+  "public/level_1.glb": {
+    "type": "asset",
+    "tags": [
+      "Model"
+    ],
+    "dependencies": [],
+    "name": "level_1.glb",
+    "thumbnailKey": "projects/dinomut1/ball-champions/public/thumbnails/ab99aa1423043a87108284ec73be0832c12596c31349b0.png",
+    "thumbnailMode": "automatic"
+  },
+  "public/scenes/New-Scene.gltf": {
+    "type": "scene",
+    "tags": [
+      "Model"
+    ],
+    "dependencies": [],
+    "name": "New-Scene.gltf",
+    "thumbnailKey": ""
+  }
+}
