@@ -368,9 +368,9 @@
         "EE_uuid": "e7d6bfb1-6390-4a8b-b744-da83b059c2d3",
         "EE_visible": true,
         "EE_skybox": {
-          "backgroundColor": 3026478,
-          "equirectangularPath": "__$project$__/ir-engine/default-project/assets/generic_midday_02.ktx2?hash=19535b",
-          "cubemapPath": "__$project$__/ir-engine/default-project/assets/skyboxsun25deg/",
+          "backgroundColor": 0,
+          "equirectangularPath": "__$project$__/ir-engine/ir-starter-assets/assets/skyboxes/desert/desert_daytime_01.png?hash=a50b9f",
+          "cubemapPath": "__$project$__/ir-engine/default-project/assets/skyboxsun25deg",
           "backgroundType": 2,
           "skyboxProps": {
             "turbidity": 10,
@@ -379,7 +379,7 @@
             "mieCoefficient": 0.004999999999999893,
             "mieDirectionalG": 0.99,
             "inclination": 0.10471975511965978,
-            "azimuth": 0.20833333333333334
+            "azimuth": 0.16666666666666666
           }
         }
       }
@@ -837,6 +837,108 @@
       }
     },
     {
+      "name": "Level 3 Start",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        107.3438611336459,
+        4.021559604653623,
+        8.786867531508456,
+        1
+      ],
+      "extensions": {
+        "EE_uuid": "0a76c073-6931-4783-a06d-9e3e81224cad",
+        "EE_visible": true
+      }
+    },
+    {
+      "name": "you_win",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        151.3039382999522,
+        28.024376224716406,
+        0,
+        1
+      ],
+      "extensions": {
+        "EE_uuid": "f3e3f0f6-850a-48d0-80f1-3c443e8e0222",
+        "EE_model": {
+          "src": "__$project$__/dinomut1/ball-champions/public/you_win.glb?hash=cd638d",
+          "cameraOcclusion": true,
+          "applyColliders": false,
+          "shape": "box"
+        },
+        "EE_shadow": {
+          "cast": true,
+          "receive": true
+        },
+        "EE_envmap": {
+          "type": "Skybox",
+          "envMapSourceColor": 8421631,
+          "envMapSourceURL": "",
+          "envMapCubemapURL": "",
+          "envMapSourceEntityUUID": "",
+          "envMapIntensity": 1
+        },
+        "EE_visible": true
+      }
+    },
+    {
+      "name": "point-light",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        152.20398080064567,
+        27.168628590526527,
+        1.7906188837780794,
+        1
+      ],
+      "extensions": {
+        "EE_uuid": "85e28e5b-3cd4-4e53-90ce-d6469403364e",
+        "EE_visible": true,
+        "EE_point_light": {
+          "color": 16777215,
+          "intensity": 1,
+          "range": 0,
+          "decay": 0.10000000000000009,
+          "castShadow": false,
+          "shadowBias": 0.0005,
+          "shadowRadius": 1
+        }
+      }
+    },
+    {
       "name": "Level 2 Finish",
       "matrix": [
         1,
@@ -851,9 +953,9 @@
         0,
         1,
         0,
-        80.55301962912004,
-        -2.1660959792205854,
-        -2.0964644827102044,
+        80.70898629168926,
+        -1.9636080322740228,
+        -2.596805294961439,
         1
       ],
       "extensions": {
@@ -1012,6 +1114,15 @@
           "radius": 1,
           "height": 2
         },
+        "EE_entity_teleport_trigger": {
+          "targetEntityUUID": "0a76c073-6931-4783-a06d-9e3e81224cad",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "force": true
+        },
         "EE_rigidbody": {
           "type": "fixed",
           "ccd": false,
@@ -1023,20 +1134,11 @@
           ],
           "canSleep": true,
           "gravityScale": 1
-        },
-        "EE_entity_teleport_trigger": {
-          "targetEntityUUID": "0a76c073-6931-4783-a06d-9e3e81224cad",
-          "offset": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          },
-          "force": true
         }
       }
     },
     {
-      "name": "Level 3 Start",
+      "name": "Level 3 Finish",
       "matrix": [
         1,
         0,
@@ -1050,13 +1152,244 @@
         0,
         1,
         0,
-        107.3438611336459,
-        2.761037876664762,
-        8.786867531508456,
+        118.33223149779202,
+        1.8793235012268914,
+        -2.14331969691828,
         1
       ],
       "extensions": {
-        "EE_uuid": "0a76c073-6931-4783-a06d-9e3e81224cad",
+        "EE_uuid": "baedca61-c05a-45e1-a614-c9114dc07771",
+        "EE_particle_system": {
+          "systemParameters": {
+            "version": "1.0",
+            "autoDestroy": false,
+            "looping": true,
+            "prewarm": false,
+            "material": "",
+            "duration": 5,
+            "shape": {
+              "type": "point"
+            },
+            "startLife": {
+              "type": "IntervalValue",
+              "a": 1,
+              "b": 2,
+              "value": 1,
+              "functions": []
+            },
+            "startSpeed": {
+              "type": "IntervalValue",
+              "a": 0.1,
+              "b": 0.5,
+              "value": 1,
+              "functions": []
+            },
+            "startRotation": {
+              "type": "IntervalValue",
+              "a": 0,
+              "b": 300,
+              "value": 1,
+              "functions": []
+            },
+            "startSize": {
+              "type": "IntervalValue",
+              "a": 0.025,
+              "b": 0.45,
+              "value": 1,
+              "functions": []
+            },
+            "startColor": {
+              "type": "ConstantColor",
+              "color": {
+                "r": 0.20863687013464577,
+                "g": 0.6514056374127929,
+                "b": 0.015208514418949472,
+                "a": 0.5
+              },
+              "a": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+              },
+              "b": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+              },
+              "functions": []
+            },
+            "emissionOverTime": {
+              "type": "ConstantValue",
+              "value": 20,
+              "a": 0,
+              "b": 1,
+              "functions": []
+            },
+            "emissionOverDistance": {
+              "type": "ConstantValue",
+              "value": 0,
+              "a": 0,
+              "b": 1,
+              "functions": []
+            },
+            "emissionBursts": [],
+            "onlyUsedByOther": false,
+            "rendererEmitterSettings": {
+              "startLength": {
+                "type": "ConstantValue",
+                "value": 1,
+                "a": 0,
+                "b": 1,
+                "functions": []
+              },
+              "followLocalOrigin": true
+            },
+            "renderMode": 0,
+            "texture": "",
+            "instancingGeometry": "",
+            "startTileIndex": {
+              "type": "ConstantValue",
+              "value": 0,
+              "a": 0,
+              "b": 1,
+              "functions": []
+            },
+            "uTileCount": 1,
+            "vTileCount": 1,
+            "blending": 2,
+            "behaviors": [],
+            "worldSpace": true
+          },
+          "behaviorParameters": [
+            {
+              "type": "ApplyForce",
+              "direction": [
+                0,
+                1,
+                0
+              ],
+              "magnitude": {
+                "type": "ConstantValue",
+                "value": 1
+              }
+            }
+          ]
+        },
+        "EE_trigger": {
+          "triggers": [
+            {
+              "target": "baedca61-c05a-45e1-a614-c9114dc07771",
+              "onEnter": "onEntityTeleportTriggerEnter",
+              "onExit": ""
+            }
+          ]
+        },
+        "EE_collider": {
+          "shape": "box",
+          "mass": 1,
+          "massCenter": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "friction": 0.5,
+          "restitution": 0.5,
+          "collisionLayer": 1,
+          "collisionMask": 7,
+          "matchMesh": true,
+          "centerOffset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "boxSize": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "radius": 1,
+          "height": 2
+        },
+        "EE_rigidbody": {
+          "type": "fixed",
+          "ccd": false,
+          "allowRolling": true,
+          "enabledRotations": [
+            true,
+            true,
+            true
+          ],
+          "canSleep": true,
+          "gravityScale": 1
+        },
+        "EE_entity_teleport_trigger": {
+          "targetEntityUUID": "b5b5462b-7a19-4654-893b-5caf0255610c",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "force": true
+        },
+        "EE_visible": true
+      }
+    },
+    {
+      "name": "Win Start",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        151.42285330033178,
+        27.904394318539296,
+        4.739808147151157,
+        1
+      ],
+      "extensions": {
+        "EE_uuid": "b5b5462b-7a19-4654-893b-5caf0255610c",
+        "EE_visible": true
+      }
+    },
+    {
+      "name": "you-winner",
+      "matrix": [
+        -3.3664523054335747,
+        0,
+        4.599673779219672,
+        0,
+        0,
+        5.7,
+        0,
+        0,
+        -4.599673779219672,
+        0,
+        -3.3664523054335747,
+        0,
+        153.94887020128323,
+        25.645574890624225,
+        3.1470124860631907,
+        1
+      ],
+      "extensions": {
+        "EE_uuid": "c2d1d679-8271-4d36-8455-87353c40c9a8",
+        "EE_image": {
+          "source": "__$project$__/dinomut1/ball-champions/public/you-winner.jpg?hash=d5ed46",
+          "alphaMode": "Opaque",
+          "alphaCutoff": 0.5,
+          "projection": "Flat",
+          "side": 2
+        },
         "EE_visible": true
       }
     },
@@ -1654,7 +1987,12 @@
         10,
         11,
         12,
-        13
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
       ]
     }
   ],
@@ -4492,112 +4830,112 @@
         {
           "target": {
             "path": "translation",
-            "node": 14
+            "node": 19
           },
           "sampler": 0
         },
         {
           "target": {
             "path": "translation",
-            "node": 15
+            "node": 20
           },
           "sampler": 1
         },
         {
           "target": {
             "path": "translation",
-            "node": 16
+            "node": 21
           },
           "sampler": 2
         },
         {
           "target": {
             "path": "translation",
-            "node": 17
+            "node": 22
           },
           "sampler": 3
         },
         {
           "target": {
             "path": "translation",
-            "node": 18
+            "node": 23
           },
           "sampler": 4
         },
         {
           "target": {
             "path": "translation",
-            "node": 19
+            "node": 24
           },
           "sampler": 5
         },
         {
           "target": {
             "path": "translation",
-            "node": 20
+            "node": 25
           },
           "sampler": 6
         },
         {
           "target": {
             "path": "translation",
-            "node": 21
+            "node": 26
           },
           "sampler": 7
         },
         {
           "target": {
             "path": "translation",
-            "node": 22
+            "node": 27
           },
           "sampler": 8
         },
         {
           "target": {
             "path": "translation",
-            "node": 23
+            "node": 28
           },
           "sampler": 9
         },
         {
           "target": {
             "path": "translation",
-            "node": 24
+            "node": 29
           },
           "sampler": 10
         },
         {
           "target": {
             "path": "translation",
-            "node": 25
+            "node": 30
           },
           "sampler": 11
         },
         {
           "target": {
             "path": "translation",
-            "node": 26
+            "node": 31
           },
           "sampler": 12
         },
         {
           "target": {
             "path": "translation",
-            "node": 27
+            "node": 32
           },
           "sampler": 13
         },
         {
           "target": {
             "path": "translation",
-            "node": 28
+            "node": 33
           },
           "sampler": 14
         },
         {
           "target": {
             "path": "translation",
-            "node": 29
+            "node": 34
           },
           "sampler": 15
         }
@@ -4710,6 +5048,8 @@
     "EE_trigger",
     "EE_collider",
     "EE_rigidbody",
-    "EE_entity_teleport_trigger"
+    "EE_entity_teleport_trigger",
+    "EE_point_light",
+    "EE_image"
   ]
 }

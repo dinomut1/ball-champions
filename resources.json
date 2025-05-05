@@ -62,22 +62,6 @@
     "name": "levels.gltf",
     "thumbnailKey": ""
   },
-  "public/scenes/New-Scene-1.gltf": {
-    "type": "scene",
-    "tags": [
-      "Model"
-    ],
-    "dependencies": [],
-    "name": "New-Scene-1.gltf"
-  },
-  "public/scenes/New-Scene.gltf": {
-    "type": "scene",
-    "tags": [
-      "Model"
-    ],
-    "dependencies": [],
-    "name": "New-Scene.gltf"
-  },
   "public/SMB1_Starry_Night.png": {
     "type": "asset",
     "tags": [
@@ -111,5 +95,25 @@
     ],
     "dependencies": [],
     "name": "volcano.mp3"
+  },
+  "public/you_win.glb": {
+    "type": "asset",
+    "tags": [
+      "Model"
+    ],
+    "dependencies": [],
+    "name": "you_win.glb",
+    "thumbnailKey": "projects/dinomut1/ball-champions/public/thumbnails/c9de5429aa59c059270480514a55bb32a0c385e72353a8.png",
+    "thumbnailMode": "automatic"
+  },
+  "public/you-winner.jpg": {
+    "type": "asset",
+    "tags": [
+      "Image"
+    ],
+    "dependencies": [],
+    "name": "you-winner.jpg",
+    "thumbnailKey": "projects/dinomut1/ball-champions/public/thumbnails/3500e4096de63656e607a2806d2bca18d5b1e0cd3c8043.png",
+    "thumbnailMode": "automatic"
   }
 }
